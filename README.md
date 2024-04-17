@@ -7,3 +7,7 @@
 # 1. Data Loading into SQL 
 I created a database called "ipl" using the following command
 CREATE DATABASE IF NOT EXISTS "ipl";
+
+
+Using MySQL Workbench imported below tables 
+https://1drv.ms/x/c/c2b4c298812dba2b/EV9Yi54iYE1Er2f8iv2idy4BwxqCLwQ3opqMZht1GUlOBA?e=KoV0WA
