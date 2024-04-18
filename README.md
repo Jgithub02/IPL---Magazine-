@@ -7,3 +7,7 @@
 # 1. Data Loading into SQL 
 Created a database called "ipl" using the following command
 
+```
+CREATE DATABASE IF NOT EXISTS "ipl";
+```
+
