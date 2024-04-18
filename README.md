@@ -5,4 +5,5 @@
 
 # Steps Followed 
 # 1. Data Loading into SQL 
-I created a database called "ipl" using the following command
+Created a database called "ipl" using the following command
+
