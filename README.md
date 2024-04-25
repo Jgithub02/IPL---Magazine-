@@ -53,3 +53,16 @@ limit 10 ;
 ```
 * Result
 ![top10runs ](https://github.com/Jgithub02/IPL---Magazine-/assets/164842901/4922df0b-afb8-4d13-bdb2-78c3dacdab9d)
+
+ Top 10 bowlers based on past 3 years total wickets taken.
+* SQL Query
+```
+select bowlerName , sum(wickets) 
+from ipl.fact_bowling_summary 
+group by bowlerName 
+order by sum(wickets) desc 
+limit 10 ;
+```
+* Result
+
+
