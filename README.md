@@ -16,21 +16,39 @@ CREATE DATABASE IF NOT EXISTS "ipl";
 ```
 SELECT * FROM ipl.dim_players_summary;
 
-select count(distinct(match_id)) from ipl.fact_bating_summary ; -- total match played in 3 years according fact_bating_summary table = 206
+select count(distinct(match_id)) from ipl.fact_bating_summary ;
+-- total match played in 3 years according fact_bating_summary table = 206
 
 
 SELECT * FROM ipl.fact_bowling_summary;
 
 
-select count(distinct(match_id)) from ipl.fact_bowling_summary ; -- total match played according fact_bowling_summary table = 206
+select count(distinct(match_id)) from ipl.fact_bowling_summary ;
+-- total match played according fact_bowling_summary table = 206
 
 
 SELECT * FROM ipl.fact_bowling_summary;
 
 
-select count(distinct(match_id)) from ipl.fact_bowling_summary ; -- total match played according dim_match table = 206 
--- According to the fact_bating_summary table, fact_bolwling_summary table and dim_match table the match played in 3 years are same (206)
+select count(distinct(match_id)) from ipl.fact_bowling_summary ;
+-- total match played according dim_match table = 206 
+-- According to the fact_bating_summary table, fact_bolwling_summary table
+and dim_match table the match played in 3 years are same (206)
 
 
-select  count(distinct(name)) from ipl.dim_players_summary; -- total palyers who played for 3 years = 292
+select  count(distinct(name)) from ipl.dim_players_summary;
+-- total palyers who played for 3 years = 292
 ```
+
+# Data Analysis :
+Top 10 batsmen based on past 3 years total runs scored.
+
+* SQL Query
+```
+select batsmanName  , sum(runs)  
+from ipl.fact_bating_summary 
+group by batsmanName 
+order  by sum(runs) desc 
+limit 10 ;
+```
+* Result 
