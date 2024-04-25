@@ -64,5 +64,7 @@ order by sum(wickets) desc
 limit 10 ;
 ```
 * Result
+![top10wicket ](https://github.com/Jgithub02/IPL---Magazine-/assets/164842901/a78c8dec-02e4-424c-bad1-c4b24853926c)
+
 
 
