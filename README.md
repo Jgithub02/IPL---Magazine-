@@ -51,4 +51,5 @@ group by batsmanName
 order  by sum(runs) desc 
 limit 10 ;
 ```
-* Result 
+* Result
+![top10runs ](https://github.com/Jgithub02/IPL---Magazine-/assets/164842901/4922df0b-afb8-4d13-bdb2-78c3dacdab9d)
